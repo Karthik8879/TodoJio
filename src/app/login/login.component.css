@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.image-container {
+    width: 50%;
+    background: url('src/assets/signupimg.png'); /* Update with your image path */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    gap: 50px;
+}
+
+.image-container {
+    /* flex: 1; */
+    padding: 20px;
+    /* max-width: 40%; */
+    height: 300px;
+    width: 300px;
+}
+
+/* .image-container img {
+    height: 300px;
+    width: 300px;
+} */
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust form width to fill the container */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+     /* .image-container,
+    .form-container {
+        height: 200px;
+        width: 200px;
+    } */
+
+    /* .image-container img{
+        width: 300px;
+        height: 200px;
+    } */
+
+    
+.image-container {
+    height: 309px;
+    width: 302px;
+}
+
+    /* form {
+        width: 100%;
+    }  */
+
+
+
+
+}
+
+
+@media screen and (max-width: 900xpx) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .form-container {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}

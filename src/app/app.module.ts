@@ -3,16 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
+import { TodoComponent } from './todo/todo.component';
+import { Ng2SearchPipe,  Ng2SearchPipeModule} from 'ng2-search-filter';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserLoginComponent,
+    LoginComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

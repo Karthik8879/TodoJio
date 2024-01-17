@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('src\assets\seamless.webp');
+    /* height: 100vh; */
+    
+}
+
+background-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* justify-content: center; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 10px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="date"] {
+    width: calc(100% - 18px); /* Adjust width for date input */
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search {
+        margin-top: 10px;
+        align-self: center;
+        justify-content: center;
+        display: flex;
+        width: 99%;
+
+}
+
+  .search input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search input:focus {
+    border-color: #007bff; /* Change the border color on focus */
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.4);
+  }
+  
+  
+
+
+/* button:hover {
+    background-color: #45a049;
+} */
+
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-top: 20px;
+}
+
+/* th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+} */
+
+td{
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: #D5EEEE !important;
+}
+
+tr:nth-child(even){
+    background-color: antiquewhite !important;
+}
+
+tr:nth-child(even) .todo-button{
+    background-color: #FAEBD7;
+}
+
+tr:nth-child(odd) .todo-button{
+    background-color: #D5EEEE;
+}
+
+
+
+.danger{
+    color: red;
+    margin-left: 10px;
+}
+
+
+i , .edit{
+    color : darkblue;
+}
+
+.l1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.toggle-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  .toggle-form {
+    margin-bottom: 20px; 
+  }
+  
+
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    /* Example: Adjust form width for small screens */
+    form {
+        width: 100%;
+    }
+}
+
+.logout{
+    display: flex;
+    align-items: end;
+    /* margin-left: 100%; */
+    float: left;
+    /* background-color: red; */
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 35px;
+}
+
+.logout i{
+    color: red;
+}
+
+.scroll{
+    overflow: auto;
+    width: 100%;
+    /* height: ; */
+}
+
+.todo-button i {
+    font-size: 16px; /* Initial size of the icon */
+    transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+}
+
+.todo-button:hover i {
+    transform: scale(1.5); /* Scale the icon on hover */
+}
+
+
+
+
+
